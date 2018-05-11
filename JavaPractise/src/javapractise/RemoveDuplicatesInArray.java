@@ -29,12 +29,14 @@ public class RemoveDuplicatesInArray {
             
             if(ch[index] != ch[index+1]){
                // System.out.println(ch[index]);
-            ch[counter] = ch[index+1];
+            ch[counter] = ch[index];
             counter++;
             }
   
             
         }
+        counter++;
+        ch[counter] = ch[ch.length-1];
         for(int index = 0; index< counter;index++){
             System.out.println(ch[index]);
         }
